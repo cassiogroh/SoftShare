@@ -4,5 +4,7 @@ Dependencies used:
     * Express
     * Nunjucks
     * Nodemon
+    * npm-run-all
+    * browser-sync
 
-npm start on localhost:5000
+"npm start" on localhost:5000
