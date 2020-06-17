@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register a Point</title>
+
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/register.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <img src="../assets/logo.svg" alt="Logo">
+                <p>Soft Share</p>
+            </div>
+            <a href="/">
+                <span><img src="../assets/arrow.svg" alt="Register"></span>
+                Take me home</a>
+        </header>
+
+        <form action="/savepoint" method='POST'>
+
+            <fieldset>
+                <legend>
+                    <h1>Register your info</h1>
+                </legend>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input type="text" name='name' placeholder='     Name' required='required'>
+                    </div>
+
+                    <div class="field">
+                        <label for="image">Image link</label>
+                        <input type="url" name='image' placeholder='     http://' required='required'>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="address">Address</label>
+                        <input type="text" name='address' placeholder='     Address' required='required'>
+                    </div>
+
+                    <div class="field">
+                        <label for="address2">Complement</label>
+                        <input type="text" value='' name='address2' placeholder='     #'>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="state">State</label>
+                        <select name='state'>
+                            <option value="0">
+                                Select a state
+                            </option>
+                        </select>
+
+                    </div>
+
+                    <div class="field">
+                        <label for="city">City</label>
+                        <select name='city' disabled='true'>
+                            <option value="">Select a city</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h1>Select what you are up to donate</h1>
+                </legend>
+
+                <div class="grid-wrapper">
+                    <li class="box">
+                        <img src='../assets/leather-jacket.svg' alt="Jackets">
+                        <span>Jackets</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/pants.svg' alt="Pants">
+                        <span>Pants</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/t-shirt.svg' alt="Shirts">
+                        <span>Shirts</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/under-clothes.svg' alt="Under clothes">
+                        <span>Under Clothes</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/dress1.svg' alt="Dresses">
+                        <span>Dresses</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/cap.svg' alt="Accesories">
+                        <span>Accesories</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/sweater.svg' alt="Sweater">
+                        <span>Sweater</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/shoes.svg' alt="Shoes">
+                        <span>Shoes</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/winter.svg' alt="Warmth">
+                        <span>Warmth</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/bathrobe.svg' alt="Pajamas">
+                        <span>Pajamas</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/sport.svg' alt="Sportive">
+                        <span>Sportive</span>
+                    </li>
+
+                    <li class="box">
+                        <img src='../assets/shorts.svg' alt="Accesories">
+                        <span>Shorts</span>
+                    </li>
+                </div>
+
+            </fieldset>
+
+        <div class="submit">
+            <button type="submit">Submit info</button>
+        </div>
+            
+        </form>
+
+        <script src="../scripts/register.js"></script>
+
+    </body>
+</html>

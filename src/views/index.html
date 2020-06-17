@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Soft Share</title>
+
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/modal.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <div class="bg">
+            <div class="firstImg">
+                <img src="../assets/hang-clothes.svg" alt="Hanger">
+            </div>
+
+            <div class="fourImg">
+                <img src="../assets/pants.svg" alt="Pants">
+                <img src="../assets/t-shirt.svg" alt="T-Shirt">
+                <img src="../assets/dress.svg" alt="Dress">
+                <img src="../assets/socks.svg" alt="Socks">
+            </div>
+        </div>
+
+        <header>
+            <div class="logo">
+                <img src="../assets/logo.svg" alt="Logo">
+                <p>Soft Share</p>
+            </div>
+            <a href="/Register">
+                <span><img src="../assets/register.svg" alt="Register"></span>
+                Register a donation point</a>
+        </header>
+
+        <main>
+            <h1>Donate warm kindness through our website</h1>
+            <a href="#">
+                <span></span>
+                Search point</a>
+        </main>
+
+
+        <div id="modal" class="hide">
+            <div class="content">
+                <div class="header">
+                    <h1>Donation points</h1>
+                    <a href="#">Close</a>
+                </div>
+                <form action="search">
+                    <label for="search">Type your city in</label>
+                    <div class="search field">
+                        <input type="text" name="search" placeholder="Search by city">
+                        <button>
+                            <img src="../assets/search.svg" alt="Search">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src='../scripts/index.js'></script>
+
+    </body>
+</html>

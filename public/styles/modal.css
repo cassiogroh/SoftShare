@@ -1,0 +1,75 @@
+#modal .content {
+    background-color: #000000EE;
+
+    height: 100vh;
+    width: 100vw;
+
+    position: absolute;
+    top: 0;
+}
+
+#modal .content .header {
+    display: flex;
+    justify-content: space-between;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 400px;
+    margin: 30vh auto 0;
+}
+
+#modal .content .header h1 {
+    color: var(--padding-color);
+}
+
+#modal .content .header a {
+    background-image: url(../assets/close.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    display: flex;
+
+    height: 40px;
+    width: 40px;
+
+    font-size: 0.01px;
+}
+
+#modal .content form {
+    color: var(--padding-color);
+    text-align: center;
+}
+
+#modal .content form .search {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    height: 50px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 0;
+    width: 350px;
+}
+
+.search button {
+    background-color: #ffffffef;
+    border: 0;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+}
+
+.search button img {
+    height: 41px;
+    width: 40px;
+    padding-top: 5px;
+}
+
+#modal.hide {
+    display: none;
+}
