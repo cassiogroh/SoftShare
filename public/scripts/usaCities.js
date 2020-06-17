@@ -1,5 +1,5 @@
 
-module.exports = [
+cities = [
   
   {'city': 'Abbeville', 'state': 'Louisiana'},
   {'city': 'Aberdeen', 'state': 'Maryland'},

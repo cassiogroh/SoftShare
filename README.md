@@ -5,4 +5,4 @@ Dependencies used:
     * Nunjucks
     * Nodemon
 
-npm start    on localhost:5000
+npm start on localhost:5000
