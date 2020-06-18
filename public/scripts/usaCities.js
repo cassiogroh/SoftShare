@@ -1,4 +1,4 @@
-JSON.stringify([
+cities = [
   {'city': 'Abbeville', 'state': 'Louisiana'},
   {'city': 'Aberdeen', 'state': 'Maryland'},
   {'city': 'Aberdeen', 'state': 'Mississippi'},
@@ -5979,4 +5979,4 @@ JSON.stringify([
 {'city': 'Zion', 'state': 'Illinois'},
 {'city': 'Zionsville', 'state': 'Indiana'},
 {'city': 'Zuni Pueblo', 'state': 'New Mexico'},
-])
+]
