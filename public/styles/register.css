@@ -63,7 +63,7 @@ form fieldset .field-group .field input, select {
     justify-items: center; */
 }
 
-.grid-wrapper .box {
+.grid-wrapper li {
     border: 3px solid var(--title-color);
     border-radius: 8px;
     background-color: var(--bgcolor1);
@@ -80,12 +80,12 @@ form fieldset .field-group .field input, select {
     transition: 400ms;
 }
 
-.grid-wrapper .box:hover {
+.grid-wrapper li:hover {
     filter: contrast(100%);
     transform: scale(1.01);
 }
 
-.grid-wrapper .box.select {
+.grid-wrapper li.select {
     border: 3px solid black;
     background-color: white;
     filter: contrast(100%);
@@ -93,22 +93,22 @@ form fieldset .field-group .field input, select {
     transition: 400ms;
 }
 
-.grid-wrapper .box.select:hover {
+.grid-wrapper li.select:hover {
     /* filter: contrast(80%); */
     /* border: 3px solid var(--title-color); */
     box-shadow: 5px 5px 10px;
 }
 
-.grid-wrapper .box span {
+.grid-wrapper li span {
     margin-top: 0;
 }
 
-.grid-wrapper .box img {
+.grid-wrapper li img {
     height: 11rem;
     padding: 20px 20px 40px 20px;
 }
 
-.grid-wrapper .box span, img {
+.grid-wrapper li span, img {
     pointer-events: none;
 }
 
@@ -148,7 +148,7 @@ form fieldset .field-group .field input, select {
         width: 90%;
     }
 
-    .grid-wrapper .box img {
+    .grid-wrapper li img {
         height: 7rem;
         padding: 5px 5px 10px 5px;
     }

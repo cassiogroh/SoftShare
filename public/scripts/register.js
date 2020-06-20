@@ -33,15 +33,40 @@ function getCities() {
   }
 };
 
+
+
+
 // Selecting Items on the lower part of the form
 
-let select = document.querySelectorAll('li[class=box]')
+let select = document.querySelectorAll('.grid-wrapper li')
 
 for (item of select) {
   item.addEventListener('click', addSelectClass) // Adding click listener for all the cards
 }
 
+const itemsDonated = document.querySelector("input[name=items]");
+selectedItems = [];
+
 function addSelectClass() {
   const item = event.target;
   item.classList.toggle('select');
+
+  const itemName = event.target.dataset.name;
+
+  const alreadySelected = selectedItems.findIndex(item => {
+    const itemFound = item == itemName;
+    return itemFound; // Return to stop the loop in case it finds the item
+  }) // findIndex returns -1 if nothing was found or the index in case it finds
+
+  if (alreadySelected >= 0) {
+    const filteredItems = selectedItems.filter(item => {
+      return item != itemName;
+    })
+    selectedItems = filteredItems;
+  } else {
+    selectedItems.push(itemName);
+  }
+  // Update the hidden input to send the selected items over to the server
+  itemsDonated.value = selectedItems.join(", ");
 }
+

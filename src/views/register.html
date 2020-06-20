@@ -11,7 +11,7 @@
 {% block content %}
     {% include "./partials/page-header.html"%}
 
-    <form action="/savepoint" method='POST'>
+    <form action="/save_point" method='POST'>
 
         <fieldset>
             <legend>
@@ -67,66 +67,68 @@
             </legend>
 
             <div class="grid-wrapper">
-                <li class="box">
+                <li data-name="Jackets">
                     <img src='../assets/leather-jacket.svg' alt="Jackets">
                     <span>Jackets</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Pants">
                     <img src='../assets/pants.svg' alt="Pants">
                     <span>Pants</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Shirts">
                     <img src='../assets/t-shirt.svg' alt="Shirts">
                     <span>Shirts</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Under Clothes">
                     <img src='../assets/under-clothes.svg' alt="Under clothes">
                     <span>Under Clothes</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Dresses">
                     <img src='../assets/dress1.svg' alt="Dresses">
                     <span>Dresses</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Accesories">
                     <img src='../assets/cap.svg' alt="Accesories">
                     <span>Accesories</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Sweaters">
                     <img src='../assets/sweater.svg' alt="Sweater">
                     <span>Sweaters</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Shoes">
                     <img src='../assets/shoes.svg' alt="Shoes">
                     <span>Shoes</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Warm Clothes">
                     <img src='../assets/winter.svg' alt="Warmth">
                     <span>Warm clothes</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Pajamas">
                     <img src='../assets/bathrobe.svg' alt="Pajamas">
                     <span>Pajamas</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Sportive">
                     <img src='../assets/sport.svg' alt="Sportive">
                     <span>Sportive</span>
                 </li>
 
-                <li class="box">
+                <li data-name="Shorts">
                     <img src='../assets/shorts.svg' alt="Accesories">
                     <span>Shorts</span>
                 </li>
             </div>
+
+            <input type="hidden" name="items">
 
         </fieldset>
 
