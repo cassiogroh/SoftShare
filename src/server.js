@@ -66,7 +66,7 @@ App.post("/savepoint", (req, res) => {
 App.get("/search", (req, res) => {
     const search = req.query.search;
 
-    db.all(`SELECT * FROM donators`, function (err, rows) {
+    db.all(`SELECT * FROM donators WHERE state LIKE '${search}'`, function (err, rows) {
 
         if (search == "") {
             // Pesquisa vazia
