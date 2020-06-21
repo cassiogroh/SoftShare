@@ -73,3 +73,22 @@
 #modal.hide {
     display: none;
 }
+
+/* Modal da página de registro */
+#modal.point .content {
+    position: fixed;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal.point .content img{
+    height: 100px;
+}
+
+#modal.point .content h1 {
+    font-size: 4vh;
+}

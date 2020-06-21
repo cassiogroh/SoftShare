@@ -15,9 +15,49 @@
     <main>
 
         <h1>Search results</h1>
-        <h2>Donations points nearby you</h2>
 
-        <div class="cardGrid">
+        {% if total > 0 %}
+
+            <h2>
+                <strong>
+                    {{total}}
+                </strong>
+                Donations points nearby you
+            </h2>
+
+            <div class="cardGrid">
+
+                {% for donator in donators%}
+
+                    <div class="card">
+                        <img src="{{donator.image}}" alt="{{donator.name}}">
+                        <div class="text">
+                            <h2>{{donator.name}}</h2>
+                            <h3>{{donator.items}}</h3>
+                            <p>{{donator.address}}
+
+                            {% if donator.address2 != "" %}
+                                {{", " + donator.address2}}
+                            {% endif %}
+                                <br>
+                                {{donator.state}}
+                                ,
+                                {{donator.city}}
+                            </p>
+                        </div>
+                    </div>
+
+                    {%endfor%}
+
+                    {%else%}
+
+                    <h2>
+                        There are no point nearby you =(
+                    </h2>
+
+                {% endif %}
+
+                {# <div class="cardGrid">
             <div class="card">
                 <img src="../assets/donation1.jpg" alt="">
                 <div class="text">
@@ -26,9 +66,9 @@
                     <p>613 5th Av.</p>
                     <p>California, Los Angeles</p>
                 </div>
-            </div>
+            </div> #}
 
-            <div class="card">
+                {# <div class="card">
                 <img src="../assets/donation2.jpg" alt="">
                 <div class="text">
                     <h2>Keyla Hensen</h2>
@@ -36,7 +76,7 @@
                     <p>74 Patriots St.</p>
                     <p>California, San Diego</p>
                 </div>
+            </div> #}
             </div>
-        </div>
-    </main>
+        </main>
 {% endblock content %}

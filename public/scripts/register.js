@@ -19,7 +19,6 @@ function getCities() {
   cityList.innerHTML = "<option> Select a city </option>"; // Resets the city list if changes the state
   cityList.disabled = false; // Enables the select city field
   let state = document.querySelector('select[name=state]').value; // Getting the name of the selected state
-  console.log(state)
 
   if (state == 0) {
     cityList.disabled = true; // Disables the city's select if reselects to default
@@ -56,7 +55,7 @@ function addSelectClass() {
   const alreadySelected = selectedItems.findIndex(item => {
     const itemFound = item == itemName;
     return itemFound; // Return to stop the loop in case it finds the item
-  }) // findIndex returns -1 if nothing was found or the index in case it finds
+  }) // findIndex returns -1 if nothing was found or the index in case it finds something
 
   if (alreadySelected >= 0) {
     const filteredItems = selectedItems.filter(item => {
@@ -69,4 +68,3 @@ function addSelectClass() {
   // Update the hidden input to send the selected items over to the server
   itemsDonated.value = selectedItems.join(", ");
 }
-

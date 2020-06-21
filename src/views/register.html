@@ -6,12 +6,14 @@
 
 {% block styles %}
     <link rel="stylesheet" href="../styles/register.css">
+    <link rel="stylesheet" href="../styles/modal.css">
 {% endblock styles %}
 
 {% block content %}
+
     {% include "./partials/page-header.html"%}
 
-    <form action="/save_point" method='POST'>
+    <form action="/savepoint" method='POST'>
 
         <fieldset>
             <legend>
@@ -138,6 +140,12 @@
 
     </form>
 {% endblock content %}
+
+{% block modal %}
+    {% if saved %}
+        {% include "partials/register_modal.html" %}
+    {% endif %}
+{% endblock modal %}
 
 {% block scripts %}
     <script src="../scripts/register.js"></script>

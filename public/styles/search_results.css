@@ -46,6 +46,10 @@ main>h2 {
     filter: drop-shadow(1px 0.5px 2px #4444dd);
 }
 
+.cardGrid .card .text p {
+    line-height: 20px;
+}
+
 .cardGrid .card .text h3 {
     line-height: 20px;
 }
