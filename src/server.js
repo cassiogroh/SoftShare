@@ -3,6 +3,7 @@ const App = express();
 
 const db = require("./database/db")
 
+
 App.use(express.static("public"))
 App.use(express.urlencoded({ extended: true }))
 
