@@ -86,4 +86,4 @@ App.get("/search", (req, res) => {
 })
 
 // Ligar o servidor
-App.listen(5000) // Porta 5000
+App.listen(process.env.PORT || 5000);
