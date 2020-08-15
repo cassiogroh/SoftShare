@@ -1,7 +1,7 @@
 # Fictional web app to connect people who desire to help others by donating clothes
 <br/>
 
-* Check it out [here](softshare.herokuapp.com/)
+* Check it out [here](https://softshare.herokuapp.com/)
 
 * Built to practice __front / backend__ skills when I first started studying __HTML / CSS / JS__; <br/>
 
