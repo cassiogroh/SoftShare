@@ -86,6 +86,14 @@ App.get("/search", (req, res) => {
 })
 
 // Ligar o servidor
+// App.listen(process.env.PORT || 3000, () => {
+//     console.log(`Server running on port ${process.env.PORT}`);
+// });
 App.listen(process.env.PORT || 3000, () => {
-    console.log(`Server running on port ${process.env.PORT}`);
+    console.log(`Server running on port ${process.env.PORT || '3000'}`);
 });
+
+// npm start with npm-run-all and browser-sync
+// "start": "npm-run-all -p nodemon browsersync",
+// "nodemon": "nodemon src/server.js",
+// "browsersync": "browser-sync start --proxy http://localhost:5000 --files '/public, /views'"

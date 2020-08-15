@@ -2,11 +2,6 @@
 /* Background */
 
 .bg {
-    /* background: url(../assets/hang-clothes.svg);
-    background-position: 60vw bottom;
-    background-repeat: no-repeat;
-    background-size: 400px; */
-
     position: absolute;
     left: 50vw;
     bottom: 25vh;
@@ -54,14 +49,10 @@ main {
 
 main h1 {
     color: black;
-    transition: color 200ms;
+    transition: color 1s;
 
     max-width: 400px;
     font-size: 50px;
-}
-
-main h1:hover {
-    color: var(--title-hover);
 }
 
 

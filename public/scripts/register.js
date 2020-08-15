@@ -16,7 +16,7 @@ prom.then(resp => {
 })
 
 function getCities() {
-  cityList.innerHTML = "<option> Select a city </option>"; // Resets the city list if changes the state
+  cityList.innerHTML = "<option hidden> Select a city </option>"; // Resets the city list if changes the state
   cityList.disabled = false; // Enables the select city field
   let state = document.querySelector('select[name=state]').value; // Getting the name of the selected state
 

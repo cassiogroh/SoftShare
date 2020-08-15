@@ -1,15 +1,15 @@
 :root {
-    --title-color: #918F3E;
-    --title-hover: #58572E;
+    --title-color: rgb(174, 122, 209);
+    --title-hover: rgb(154, 88, 198);
 
-    --text-color: #403F09;
-    --text-hover: #222107;
+    --text-color: black;
+    --text-hover: rgb(157, 251, 215);
 
-    --padding-color: #FFE095;
-    --padding-inner: #FFF095;
+    --padding-color: rgb(171, 139, 193);
+    --padding-inner: rgb(245, 229, 255);
 
-    --bgcolor1: #FFFEE4;
-    --bgcolor2: #DDFFEE;
+    --bgcolor1: rgb(201, 173, 225);
+    --bgcolor2: rgb(152, 75, 180);
 }
 
 * {
@@ -20,7 +20,7 @@
 }
 
 body {
-    background: linear-gradient(var(--bgcolor1), var(--bgcolor2));
+    background: radial-gradient(var(--bgcolor1), var(--bgcolor2));
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     margin: 0;
