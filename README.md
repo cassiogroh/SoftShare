@@ -1,4 +1,4 @@
-# Ficticial web app to connect people who desire to help others by donating clothes
+# Fictional web app to connect people who desire to help others by donating clothes
 <br/>
 
 * Built to practice __front / backend__ skills when I first started studying __HTML / CSS / JS__; <br/>
