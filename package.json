@@ -2,7 +2,7 @@
   "name": "softshare",
   "version": "1.0.0",
   "engines": {
-    "node": "12.18.0"
+    "node": "13.10.1"
   },
   "description": "",
   "main": "server.js",
@@ -15,6 +15,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "nunjucks": "^3.2.1",
+    "sqlite3": "^4.2.0",
     "nodemon": "^2.0.4"
   },
   "repository": {
