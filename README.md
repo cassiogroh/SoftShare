@@ -1,4 +1,4 @@
-# Ficticial web app to connect people who desire to help others by donating clothes
+# Fictional web app to connect people who desire to help others by donating clothes
 <br/>
 
 * Check it out [here](softshare.herokuapp.com/)
