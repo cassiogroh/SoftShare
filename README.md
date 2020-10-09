@@ -1,5 +1,6 @@
 <h1 align="center">
-  <img alt="Logo" src="./public/webView/logo.png" width="100px">
+  <img alt="Logo" src="./public/webView/logo.png" width="100px"> </br>
+  SoftShare
 </h1>
 
 <h3 align="center">
@@ -50,7 +51,7 @@ This app provides a way to make people's lives merrier by donating clothes to th
 
 ## 🚀 Technologies
 
-Technologies used to develop frontend web
+Technologies used to develop this App
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
@@ -78,7 +79,7 @@ $ git clone https://github.com/cassiogroh/SoftShare && cd SoftShare
 $ npm install
 
 # Start the app
-$ npm start dev:server
+$ npm start
 
 # Well done, project is running!
 
